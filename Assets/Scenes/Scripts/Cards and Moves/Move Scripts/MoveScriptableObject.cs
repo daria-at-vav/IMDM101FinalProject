@@ -1,7 +1,7 @@
 using UnityEngine;
 using static CardController;
 
-
+[CreateAssetMenu (fileName = "Move", menuName = "Moves/NewMove") ]
 public class MoveScriptableObject : ScriptableObject
 {
     public MonType monType;
