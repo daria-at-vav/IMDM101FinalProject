@@ -33,6 +33,7 @@ public class CardController : MonoBehaviour
         Normal,
     }
 
+    // Types are an Enum instead of a string so that we dont have to worry about string entry and mispellings
     private static int TypeToInt( MonType type)
     {
         switch (type)
@@ -66,21 +67,29 @@ public class CardController : MonoBehaviour
         
     }
 
+    // uses the specified move on the specified card
     public void useMove (MoveScriptableObject move, CardController other)
     {
-        int damage  = move.calculateDamage();
-        int effect = move.calculateEffect();
+        // gets the damage that the move does
+        int damage  = move.CalculateDamage();
+        // gets the effect on the user (recoil or heal)
+        int effect = move.CalculateEffect();
 
-        
+        // calculates the damage to the other card based on type interaction and subtracts it from the other cards hp
         other.hp -= (int)(damage * typeInteraction(other, move));
+        // adds the recoil or heal to the move users health
         hp += effect;
     }
 
-    // Know you didn'y finish but what is typeInteraction supposed to do
+    // returns damage multiplier based on the type of the move and the card the move is being used on
     public float typeInteraction(CardController other, MoveScriptableObject move)
     {
+        // gets the type of the recieving card and converts it into an index
         int otherType = other.typeIndex;
+        // gets the type of the move and converts it into an index
         int moveType = TypeToInt(move.monType);
+
+        // returns the multiplier from the matchup array (either 1, 2, or 0.5)
         return typeMatchArray[moveType, otherType];
     }
 }
