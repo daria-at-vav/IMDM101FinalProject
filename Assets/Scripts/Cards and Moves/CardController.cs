@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,7 +11,7 @@ public class CardController : MonoBehaviour
     [SerializeField] MoveScriptableObject move1;
     [SerializeField] MoveScriptableObject move2;
 
-
+    private int currHp;
     private int typeIndex;
 
     // this is the effectiveness chart from the art assets spreadsheet, column is attacking type and row is recieving type
@@ -59,6 +60,7 @@ public class CardController : MonoBehaviour
     void Start()
     {
         typeIndex = TypeToInt(type);
+        currHp = hp;
     }
 
     // Update is called once per frame
@@ -68,17 +70,21 @@ public class CardController : MonoBehaviour
     }
 
     // uses the specified move on the specified card
-    public void useMove (MoveScriptableObject move, CardController other)
+    public void useMove(MoveScriptableObject move, CardController other)
     {
         // gets the damage that the move does
-        int damage  = move.CalculateDamage();
+        int damage = move.CalculateDamage();
         // gets the effect on the user (recoil or heal)
         int effect = move.CalculateEffect();
 
         // calculates the damage to the other card based on type interaction and subtracts it from the other cards hp
-        other.hp -= (int)(damage * typeInteraction(other, move));
+        other.currHp -= (int)(damage * typeInteraction(other, move));
         // adds the recoil or heal to the move users health
-        hp += effect;
+        if (currHp + effect <= hp)
+        {
+            currHp += effect;
+        }
+        
     }
 
     // returns damage multiplier based on the type of the move and the card the move is being used on
