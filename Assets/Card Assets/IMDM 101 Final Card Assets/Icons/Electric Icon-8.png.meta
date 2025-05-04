@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Electric Icon-8_0: 8764159031318495085
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

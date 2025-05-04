@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Card-BackgroundsWater-Img-Border_0: 5912398324358379380
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

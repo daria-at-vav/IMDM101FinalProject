@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Card-BackgroundsGrass-Bg_0: -5640795283973383330
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

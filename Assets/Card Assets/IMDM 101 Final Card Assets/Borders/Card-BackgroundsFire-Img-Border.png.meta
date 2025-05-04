@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Card-BackgroundsFire-Img-Border_0: 2385069320381918558
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
