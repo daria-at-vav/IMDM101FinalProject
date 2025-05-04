@@ -1,20 +1,18 @@
 using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CardController : MonoBehaviour
 {
 
-    [SerializeField] int hp;
-    [SerializeField] MonType type;
-    [SerializeField] MoveScriptableObject move1;
-    [SerializeField] MoveScriptableObject move2;
+    
+    [SerializeField] public CardData cardData;
 
-    private int currHp;
+    // ik this shows up in the editor dont touch it
+    public int currHp;
     private int typeIndex;
 
-    // this is the effectiveness chart from the art assets spreadsheet, column is attacking type and row is recieving type
+    // this is the effectiveness chart from the art assets spreadsheet, column is attacking type and row is recieving type, number is the multiplier to the moves damage
     public static float[,] typeMatchArray = 
         { 
         {2, 2, 0.5f, 1, 1, 1}, 
@@ -24,6 +22,8 @@ public class CardController : MonoBehaviour
         {1, 2, 0.5f, 2, 1, 1 }, 
         {1, 1, 1, 1, 1, 1 }  
         };
+
+    // Types are an Enum instead of a string so that we dont have to worry about string entry and mispellings
     public enum MonType
     {
         Fire, 
@@ -34,7 +34,7 @@ public class CardController : MonoBehaviour
         Normal,
     }
 
-    // Types are an Enum instead of a string so that we dont have to worry about string entry and mispellings
+    // converts the card's type to a number to be indexed into the type matchup array
     private static int TypeToInt( MonType type)
     {
         switch (type)
@@ -59,8 +59,8 @@ public class CardController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        typeIndex = TypeToInt(type);
-        currHp = hp;
+        typeIndex = TypeToInt(cardData.type);
+        currHp = cardData.baseHp;
     }
 
     // Update is called once per frame
@@ -78,24 +78,36 @@ public class CardController : MonoBehaviour
         int effect = move.CalculateEffect();
 
         // calculates the damage to the other card based on type interaction and subtracts it from the other cards hp
-        other.currHp -= (int)(damage * typeInteraction(other, move));
+        other.currHp -= (int)(damage * typeInteraction(other));
+
         // adds the recoil or heal to the move users health
-        if (currHp + effect <= hp)
+        if (currHp + effect <= cardData.baseHp && currHp + effect >= 0)
         {
+            // adds effect normally if effect will put currHp in the range [0, baseHp]
             currHp += effect;
         }
+        else if (currHp + effect > cardData.baseHp) 
+        {
+            // if adding the effect will make currHp higher than baseHp just sets it to baseHp
+            currHp = cardData.baseHp;
+        }
+        else if(currHp + effect < 0)
+        {
+            // if adding the effect will make currHp less than 0 then just set currHp to 0
+            currHp = 0;
+        }
+
+
         
     }
 
-    // returns damage multiplier based on the type of the move and the card the move is being used on
-    public float typeInteraction(CardController other, MoveScriptableObject move)
+    // returns damage multiplier based on the type of the card using the move and the card the move is being used on
+    public float typeInteraction(CardController other)
     {
         // gets the type of the recieving card and converts it into an index
         int otherType = other.typeIndex;
-        // gets the type of the move and converts it into an index
-        int moveType = TypeToInt(move.monType);
 
         // returns the multiplier from the matchup array (either 1, 2, or 0.5)
-        return typeMatchArray[moveType, otherType];
+        return typeMatchArray[typeIndex, otherType];
     }
 }
