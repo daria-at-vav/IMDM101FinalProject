@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: c2e4b09571277754197baba9a2dd9a8c
+guid: bd88774b653530f47b77a73824aef341
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3476192708383499638
-    second: Laundry_0
-  - first:
-      213: 8475438678814803057
-    second: Laundry_1
-  - first:
-      213: -9015152529184218550
-    second: Laundry_2
-  - first:
-      213: -2656488572296604197
-    second: Laundry_3
-  - first:
-      213: 125141789481448193
-    second: Laundry_4
-  - first:
-      213: -7623998778344956550
-    second: Laundry_5
+      213: 4296193443984631328
+    second: Bush_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -141,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Laundry_0
+      name: Bush_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 47
-        width: 28
-        height: 11
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,118 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a8a9ffd362512cfc0800000000000000
-      internalID: -3476192708383499638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Laundry_1
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 47
-        width: 28
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 174cc56d29ece9570800000000000000
-      internalID: 8475438678814803057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Laundry_2
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 15
-        width: 28
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a42a20ef98eb3e280800000000000000
-      internalID: -9015152529184218550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Laundry_3
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 31
-        width: 28
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bd5506ad7b1422bd0800000000000000
-      internalID: -2656488572296604197
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Laundry_4
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 31
-        width: 28
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10339946bc79cb100800000000000000
-      internalID: 125141789481448193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Laundry_5
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 15
-        width: 28
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a7d9cb8318d123690800000000000000
-      internalID: -7623998778344956550
+      spriteID: 026e013dc252f9b30800000000000000
+      internalID: 4296193443984631328
       vertices: []
       indices: 
       edges: []
@@ -276,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8a1cd334eb7738242b77cffb4e77da2a
     internalID: 0
     vertices: []
     indices: 
@@ -285,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bush_0: 4296193443984631328
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

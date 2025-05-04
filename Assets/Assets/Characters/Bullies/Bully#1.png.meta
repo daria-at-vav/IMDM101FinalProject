@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: eabe4f1e8bf7ff64b80bb3dffe3ffdf3
+guid: ebf81d26646267c498f3a732eb79b6fb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5787383942313946621
-    second: Safeway_0
+      213: 8278472827970353434
+    second: Bully#1_0
   - first:
-      213: -7290893994687248437
-    second: Safeway_1
-  - first:
-      213: -6933220599900378348
-    second: Safeway_2
+      213: 5212977705327995262
+    second: Bully#1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,35 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Safeway_0
+      name: Bully#1_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 15
-        width: 14
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 302d393a7f41fafa0800000000000000
-      internalID: -5787383942313946621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Safeway_1
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 15
+        x: 0
+        y: 16
         width: 16
-        height: 33
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc743a76a8a81da90800000000000000
-      internalID: -7290893994687248437
+      spriteID: a1975e10d2b03e270800000000000000
+      internalID: 8278472827970353434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Safeway_2
+      name: Bully#1_1
       rect:
         serializedVersion: 2
-        x: 34
-        y: 15
-        width: 13
-        height: 33
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,8 +166,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41b6481299048cf90800000000000000
-      internalID: -6933220599900378348
+      spriteID: e792b1c7a97385840800000000000000
+      internalID: 5212977705327995262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully#1_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375602854a10b64479e6292dda59d7a0
+      internalID: -1503319315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully#1_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e385018f1f03944fa62fb83129fb736
+      internalID: -540990323
       vertices: []
       indices: 
       edges: []
@@ -201,7 +220,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 12270efef85e47d4589eb6f8f8a2c300
     internalID: 0
     vertices: []
     indices: 
@@ -210,7 +229,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bully#1_0: 8278472827970353434
+      Bully#1_1: 5212977705327995262
+      Bully#1_2: -1503319315
+      Bully#1_3: -540990323
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

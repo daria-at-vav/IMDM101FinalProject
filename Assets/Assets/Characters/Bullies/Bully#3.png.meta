@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 22800b74970a7914bbc0f28178d4fc8c
+guid: 2c2c8c7b1907eee4d880263750ecbce8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -734796840722011684
-    second: Park_0
+      213: -6727246503221263029
+    second: Bully#3_0
   - first:
-      213: 2855191348951792281
-    second: Park_1
-  - first:
-      213: -7855295492777435745
-    second: Park_2
+      213: 2684391464858861369
+    second: Bully#3_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,56 +129,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Park_0
+      name: Bully#3_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 15
+        y: 16
         width: 16
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd96fae9a2a7dc5f0800000000000000
-      internalID: -734796840722011684
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Park_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 15
-        width: 15
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 99a3a08876daf9720800000000000000
-      internalID: 2855191348951792281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Park_2
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 0
-        width: 15
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -191,8 +144,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f9d16435e526cf290800000000000000
-      internalID: -7855295492777435745
+      spriteID: b450203a2f404a2a0800000000000000
+      internalID: -6727246503221263029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully#3_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93fb00590dfd04520800000000000000
+      internalID: 2684391464858861369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully#3_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d1ef0da8193ed4eb70be49439ffb6c
+      internalID: 940263088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully#3_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e0e645d326a1b4faae6094b98d4567
+      internalID: 1972078104
       vertices: []
       indices: 
       edges: []
@@ -201,7 +220,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8023b273b1dfb0d47b72b5f455b6eba4
     internalID: 0
     vertices: []
     indices: 
@@ -210,7 +229,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bully#3_0: -6727246503221263029
+      Bully#3_1: 2684391464858861369
+      Bully#3_2: 940263088
+      Bully#3_3: 1972078104
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
