@@ -11221,7 +11221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 5
   solidTilemap: {fileID: 922749207}
-  add: {x: 0, y: 0, z: 0}
+  add: {x: 0, y: -1, z: 0}
 --- !u!212 &1912637988
 SpriteRenderer:
   m_ObjectHideFlags: 0

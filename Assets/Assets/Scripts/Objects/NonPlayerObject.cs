@@ -8,7 +8,7 @@ public abstract class NonPlayerObject : MonoBehaviour, IInteractable
     [SerializeField] private SpriteRenderer interactableIndicator;
     protected bool interactable = false;
     private  Transform playerTransform;
-    private float interactDistance = 2f;
+    //private float interactDistance = 2f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected void Start()
