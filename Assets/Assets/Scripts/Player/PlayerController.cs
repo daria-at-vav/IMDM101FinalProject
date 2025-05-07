@@ -1,5 +1,6 @@
 using System.Collections;
 using NUnit.Framework.Constraints;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Tilemaps;
@@ -17,6 +18,9 @@ public class PlayerController : MonoBehaviour
     private bool isFrozen = false;
     private Vector2 input;
     private Animator animator;
+    //added for scene changes
+    private bool sceneChanged;
+    private Vector3 tpTo;
 
     private void Awake()
     {
@@ -63,16 +67,30 @@ public class PlayerController : MonoBehaviour
     }
 
     // this is what actually moves the player, it takes a target position and smoothly moves the player to that point
-    IEnumerator Move(Vector3 targetPos)
+    public IEnumerator Move(Vector3 targetPos)
     {
         // player is currently moving between two tiles
         isMoving = true;
         while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon) // if target position and transform position are different enough
         { 
-            //move position closer to target position
-            transform.position = Vector3.MoveTowards(transform.position, targetPos, movementSpeed * Time.deltaTime);
-            // go to next frame
-            yield return null;
+            //stops the player from moving to the old tile if scene has changed
+            //does this by moving them to the new one really really fast
+            if(sceneChanged)
+            {
+                float oldSpd = movementSpeed;
+                movementSpeed = 99999;
+                print("sceneChanged");
+                targetPos = tpTo;
+                transform.position = Vector3.MoveTowards(transform.position, targetPos, movementSpeed * Time.deltaTime);
+                sceneChanged = false;
+                movementSpeed = oldSpd;
+            } else
+            {
+                //move position closer to target position
+                transform.position = Vector3.MoveTowards(transform.position, targetPos, movementSpeed * Time.deltaTime);
+                // go to next frame
+                yield return null;
+            }
         }
         // if theyre close enough just snap player pos to target pos
         transform.position = targetPos;
@@ -104,5 +122,10 @@ public class PlayerController : MonoBehaviour
     {
         movementSpeed = MOVEMENT_SPEED;
         isFrozen = false;
+    }
+    public void SceneChange(Vector3 pos)
+    {
+        sceneChanged = true;
+        tpTo = pos;
     }
 }
