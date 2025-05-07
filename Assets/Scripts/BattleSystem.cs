@@ -46,13 +46,13 @@ public class BattleSystem : MonoBehaviour
 
     }
 
-    IEnumerator DrawCards()
-    {
+    //IEnumerator DrawCards()
+   // {
         //from card array, bring in new card obj 
-        yield return new WaitForSeconds(2f);
+       // yield return new WaitForSeconds(2f);
         // card sprite to hand 
         //StartCoroutine(CardAttack());
-    }
+   // }
 
     //IEnumerator CardAttack()
     // bool isDead = enemyUnit.Damage(playerUnit.attack);
@@ -80,7 +80,8 @@ public class BattleSystem : MonoBehaviour
     if(state == BattleState.WIN)
     {
         //text, transition to scene to get prize
-    } else if(state == BattleState.LOSE)
+    } 
+    else if(state == BattleState.LOSE)
     {
         //text, return to last scene
     }
@@ -89,12 +90,13 @@ public class BattleSystem : MonoBehaviour
     void PlayerGo()
     {
        // dialogueText.text = "Draw from Deck, Play a Card from Hand, or Choose a Move on a Card in Play.";
+//err cs8300 merge
     }
 
     public void OnDrawButton()
+    {
         if (state != BattleState.PLAYERGO)
             return;
-
-        StartCoroutine(DrawCards());
-
+        //else
+    }
 }
