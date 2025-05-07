@@ -18,17 +18,16 @@ public class PlayerController : MonoBehaviour
     private bool isFrozen = false;
     private Vector2 input;
     private Animator animator;
+    
     //added for scene changes
     private bool sceneChanged;
     private Vector3 tpTo;
 
-    private void Awake()
-    {
+    private void Awake() {
         animator = GetComponent<Animator>();
     }
 
-    private void Update()
-    {
+    private void Update() {
         if (!isMoving) 
         { 
             // gets current input
@@ -123,6 +122,7 @@ public class PlayerController : MonoBehaviour
         movementSpeed = MOVEMENT_SPEED;
         isFrozen = false;
     }
+
     public void SceneChange(Vector3 pos)
     {
         sceneChanged = true;
