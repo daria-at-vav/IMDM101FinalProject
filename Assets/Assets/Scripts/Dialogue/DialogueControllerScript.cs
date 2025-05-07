@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
 using System.Collections;
+using UnityEngine.UI;
 
 public class DialogueControllerScript : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class DialogueControllerScript : MonoBehaviour
     [SerializeField] private TextMeshProUGUI messageText;
     [SerializeField] private float typeSpeed = 10;
     [SerializeField] private PlayerController playerController;
+    private Image background;
     private float MAX_TYPE_TIME = 0.1f;
 
 
@@ -20,6 +22,14 @@ public class DialogueControllerScript : MonoBehaviour
 
     private string para;
 
+    public void Start()
+    //serializing is my #1 opp i just dislike it. reworked so we dont have to click and drag 1 billion times
+    {
+        nameText = GameObject.Find("Speaker Name").GetComponent<TextMeshProUGUI>();
+        messageText = GameObject.Find("Message").GetComponent<TextMeshProUGUI>();
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
+        background = GameObject.Find("DialogueTextImage").GetComponent<Image>();
+    }
 
     public void DisplayNextParagraph(DialogueText dialogueText) 
     { 
@@ -60,11 +70,11 @@ public class DialogueControllerScript : MonoBehaviour
         {
             playerController.Freeze();
         }
-        
-        if(!gameObject.activeSelf)
-        {
-            gameObject.SetActive(true);
-        }
+
+        //changed objects so just the component is disabled so it's searchable
+        nameText.enabled = true;
+        messageText.enabled = true;
+        background.enabled = true;
 
         //update name 
         nameText.text = dialogueText.speakerName;
@@ -84,8 +94,11 @@ public class DialogueControllerScript : MonoBehaviour
         {
             playerController.Unfreeze();
         }
+
+        nameText.enabled = false;
+        messageText.enabled = false;
+        background.enabled = false;
         
-        gameObject.SetActive(false);
         conversationEnded = true;
 
     }

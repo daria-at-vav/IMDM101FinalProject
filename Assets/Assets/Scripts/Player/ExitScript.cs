@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 using System.Threading.Tasks;
 using UnityEditor.SearchService;
 using UnityEngine.Tilemaps;
+using System.Collections;
 
 public class ExitScript : MonoBehaviour
 {
