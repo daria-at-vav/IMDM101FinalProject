@@ -5,8 +5,8 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Tilemaps;
 
-public class PlayerController : MonoBehaviour
-{
+public class PlayerController : MonoBehaviour {
+
     public float movementSpeed;
     public const float MOVEMENT_SPEED = 5f;
     // tilemap that things that cannot be walked on/under are placed on
@@ -66,16 +66,16 @@ public class PlayerController : MonoBehaviour
     }
 
     // this is what actually moves the player, it takes a target position and smoothly moves the player to that point
-    public IEnumerator Move(Vector3 targetPos)
-    {
+    public IEnumerator Move(Vector3 targetPos) {
         // player is currently moving between two tiles
         isMoving = true;
-        while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon) // if target position and transform position are different enough
-        { 
+        
+        // if target position and transform position are different enough
+
+        while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon) {
             //stops the player from moving to the old tile if scene has changed
             //does this by moving them to the new one really really fast
-            if(sceneChanged)
-            {
+            if(sceneChanged){
                 float oldSpd = movementSpeed;
                 movementSpeed = 99999;
                 print("sceneChanged");
@@ -83,8 +83,7 @@ public class PlayerController : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, targetPos, movementSpeed * Time.deltaTime);
                 sceneChanged = false;
                 movementSpeed = oldSpd;
-            } else
-            {
+            } else {
                 //move position closer to target position
                 transform.position = Vector3.MoveTowards(transform.position, targetPos, movementSpeed * Time.deltaTime);
                 // go to next frame
@@ -97,18 +96,15 @@ public class PlayerController : MonoBehaviour
         isMoving = false;
     }
 
-    private bool IsWalkable(Vector3 target)
-    {
+    private bool IsWalkable(Vector3 target) {
         // if the target tile position exists in the solid tilemap the tile is not walkable
-        if (solidTilemap.GetTile(Vector3Int.FloorToInt(target) + add) != null)
-        {
+        if (solidTilemap.GetTile(Vector3Int.FloorToInt(target) + add) != null){
             print("BONK!");
             return false;
-        }
-
-        // else tile is walkable
-        else
+        } else {
+            // else tile is walkable    
             return true;
+        }
     }
 
     public void Freeze() 
@@ -123,8 +119,7 @@ public class PlayerController : MonoBehaviour
         isFrozen = false;
     }
 
-    public void SceneChange(Vector3 pos)
-    {
+    public void SceneChange(Vector3 pos){
         sceneChanged = true;
         tpTo = pos;
     }
