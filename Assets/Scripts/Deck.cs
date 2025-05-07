@@ -11,7 +11,7 @@ public class Deck: MonoBehaviour
     [SerializeField] private CardCollection playerDeck;
     //replace terms cardPrefab with actual prefab name?
     [SerializeField] private Card cardPrefab; //our prefab to make copies with diff card data?
-    [SerializeField] private Canvas cardCanvas;
+    [SerializeField] private Canvas cardCanvas; // to put the cards into the right spots ig?
 
     private List<Card> deckPile;
     private List<Card> discardPile;
@@ -38,7 +38,7 @@ public class Deck: MonoBehaviour
     }
     private void InstantiateDeck()
     {
-
+        Card card = Instantiate(cardPrefab, cardCanvas.transform);
     }
     #endregion
 }

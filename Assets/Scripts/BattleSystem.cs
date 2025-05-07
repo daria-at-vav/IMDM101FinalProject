@@ -46,19 +46,19 @@ public class BattleSystem : MonoBehaviour
 
     }
 
-    //IEnumerator DrawCards()
+    //IEnumerator Moveset()
    // {
-        //from card array, bring in new card obj 
-       // yield return new WaitForSeconds(2f);
-        // card sprite to hand 
-        //StartCoroutine(CardAttack());
-   // }
-
-    //IEnumerator CardAttack()
-    // bool isDead = enemyUnit.Damage(playerUnit.attack);
+       //move 1 or move 2
+      // calc dmg
+      //check for dead, set to win
+      // update stats
+      // end turn
+     
+     
+      
+    // bool isDead = enemyUnit.Damage(playerUnit.move);
     // enemyBenchDisplay.SetHP(enemyUnit.currentHP);
-    //  dialogueText.text = 
-    //
+    //  dialogueText.text =  
     // yield return new WaitForSeconds(2f);
     //if(isDead)
    // {
@@ -68,35 +68,35 @@ public class BattleSystem : MonoBehaviour
    //  StartCoroutine(EnemyGo());
    //}
 
-   //IEnumerator EnemyGo()
-   //{
-   // attack from cards in array enemyUnit.cardArray
-   // deal damage
+    void PlayerGo()
+    {
+       // dialogueText.text for instructions
+        // buttons active
+        // inst cards to form deck?
+         //from card array, bring in new card obj 
+       // yield return new WaitForSeconds(2f);
+        // card sprite to hand 
+        //StartCoroutine(Moveset());
+    }
+     void EnemyGo()
+   {
+   // inst. specific cards
+   // attack 
+   // deal damage, check for lose
    // end turn 
-   //}
+   //state = BattleState.PLAYERGO;
+   }
 
-   void EndBattle()
+  void EndBattle()
    {
     if(state == BattleState.WIN)
     {
-        //text, transition to scene to get prize
+        //text, transition to scene
     } 
     else if(state == BattleState.LOSE)
     {
-        //text, return to last scene
+        //text, return to last point
     }
    }
-
-    void PlayerGo()
-    {
-       // dialogueText.text = "Draw from Deck, Play a Card from Hand, or Choose a Move on a Card in Play.";
-//err cs8300 merge
-    }
-
-    public void OnDrawButton()
-    {
-        if (state != BattleState.PLAYERGO)
-            return;
-        //else
-    }
 }
+   
