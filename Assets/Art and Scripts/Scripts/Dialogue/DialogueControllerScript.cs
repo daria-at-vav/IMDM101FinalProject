@@ -4,15 +4,14 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.UI;
 
-public class DialogueControllerScript : MonoBehaviour
-{
+public class DialogueControllerScript : MonoBehaviour {
+
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI messageText;
     [SerializeField] private float typeSpeed = 10;
     [SerializeField] private PlayerController playerController;
     private Image background;
     private float MAX_TYPE_TIME = 0.1f;
-
 
     private Queue<string> paragraphs = new Queue<string>();
     private Coroutine typeDialogueCorutine;
@@ -22,27 +21,23 @@ public class DialogueControllerScript : MonoBehaviour
 
     private string para;
 
-    public void Start()
-    //serializing is my #1 opp i just dislike it. reworked so we dont have to click and drag 1 billion times
-    {
+    // Serializing is my #1 opp i just dislike it. reworked so we dont have to click and drag 1 billion times
+    public void Start() {
         nameText = GameObject.Find("Speaker Name").GetComponent<TextMeshProUGUI>();
         messageText = GameObject.Find("Message").GetComponent<TextMeshProUGUI>();
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         background = GameObject.Find("DialogueTextImage").GetComponent<Image>();
     }
 
-    public void DisplayNextParagraph(DialogueText dialogueText) 
-    { 
+    public void DisplayNextParagraph(DialogueText dialogueText) { 
         // if theres nothing in the queue
-        if(paragraphs.Count == 0)
-        {
-            if (conversationEnded) 
-            {
+        if (paragraphs.Count == 0) {
+
+            if (conversationEnded) {
                 //start a conversation
                 StartConvo(dialogueText);
             }
-            else if (!conversationEnded && !isTyping)
-            {
+            else if (!conversationEnded && !isTyping) {
                 //end the conversation
                 EndConvo();
                 return;
@@ -50,24 +45,16 @@ public class DialogueControllerScript : MonoBehaviour
         }
 
         //if there is something in the queue
-        if (!isTyping)
-        {
+        if (!isTyping) {
             para = paragraphs.Dequeue();
             typeDialogueCorutine = StartCoroutine(TypeDialogueText(para));
-        }
-        else
-        {
+        } else {
             FinishParagraphEarly();
         }
-        
-
-        
     }
 
-    private void StartConvo(DialogueText dialogueText)
-    {
-        if(playerController != null)
-        {
+    private void StartConvo(DialogueText dialogueText) {
+        if (playerController != null) {
             playerController.Freeze();
         }
 
@@ -80,18 +67,16 @@ public class DialogueControllerScript : MonoBehaviour
         nameText.text = dialogueText.speakerName;
 
         //add dialogue text to queue
-        foreach(string p in dialogueText.paragraphs) 
-        { 
+        foreach(string p in dialogueText.paragraphs) { 
             paragraphs.Enqueue(p);
         }
+
         conversationEnded = false;
     }
 
-    private void EndConvo()
-    {
+    private void EndConvo() {
         // clear queue
-        if(playerController != null)
-        {
+        if(playerController != null) {
             playerController.Unfreeze();
         }
 
