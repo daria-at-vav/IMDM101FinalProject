@@ -26,6 +26,11 @@ public class ExitScript : MonoBehaviour
             sceneName = "Hallway";
             moveToScene();
         }
+        if(collision.gameObject.name.Equals("HallwayExit1"))
+        {
+            sceneName = "Neighborhood";
+            moveToScene();
+        }
         
        
     }

@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 public abstract class NonPlayerObject : MonoBehaviour, IInteractable
 {
 
-    [SerializeField] private SpriteRenderer interactableIndicator;
+    //[SerializeField] private SpriteRenderer interactableIndicator;
     protected bool interactable = false;
     private  Transform playerTransform;
     private float interactDistance = 2f;
@@ -23,16 +23,16 @@ public abstract class NonPlayerObject : MonoBehaviour, IInteractable
         {
             Interact();
         }
-        if (!interactableIndicator.gameObject.activeSelf && interactable) 
-        { 
+        //if (!interactableIndicator.gameObject.activeSelf && interactable) 
+        //{ 
             // turn on sprite
-            interactableIndicator.gameObject.SetActive(true);
-        }
-        else if (interactableIndicator.gameObject.activeSelf && !interactable)
-        {
+        //    interactableIndicator.gameObject.SetActive(true);
+        //}
+        //else if (interactableIndicator.gameObject.activeSelf && !interactable)
+        //{
             // turn off sprite
-            interactableIndicator.gameObject.SetActive(false);
-        }
+         //   interactableIndicator.gameObject.SetActive(false);
+        //}
     }
 
     public abstract void Interact();
