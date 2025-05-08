@@ -8,20 +8,19 @@ public class BattleInteractableObject : SimpleInteractableObject
     [SerializeField] int maxInteractCount;
 
     int interactcount = 0;
-    public override void Interact()
-    {
-        if (SceneManager.loadedSceneCount == 1 && interactcount < 2)
-        {
-            Talk(dialogueText);
-            interactcount++;
-        } else if (SceneManager.loadedSceneCount == 1 && interactcount < maxInteractCount)
-        {
-            Talk(dialogueText); 
-            GameObject.Find("EventSystem").GetComponent<EventSystem>().enabled = false;
 
+    public override void Interact() {
+        if (interactcount < maxInteractCount+1){
+            interactcount++;
+            Talk(dialogueText);
+            print("interacted");
+        } 
+        
+        if (interactcount == maxInteractCount + 1) {
+            interactcount++;
+            GameObject.Find("EventSystem").GetComponent<EventSystem>().enabled = false;
             SceneManager.LoadScene(BattleName, LoadSceneMode.Additive);
         }
-        print("interacted");
 
     }
 }

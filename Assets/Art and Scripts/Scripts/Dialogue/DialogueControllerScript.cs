@@ -92,6 +92,7 @@ public class DialogueControllerScript : MonoBehaviour {
         background.enabled = false;
         
         conversationEnded = true;
+        //paragraphs.Clear();
     }
 
     private IEnumerator TypeDialogueText(string p) {

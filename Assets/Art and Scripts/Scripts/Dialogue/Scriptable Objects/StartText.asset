@@ -12,16 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d87d450c5195874ea4145bd4e6fad16, type: 3}
   m_Name: StartText
   m_EditorClassIdentifier: 
-  speakerName: Frosk
+  speakerName: 
   paragraphs:
-  - "At first, it was just about the architecture\u2026"
-  - I liked flipping through magazines and gawking at the modern and brutalist buildings
-    on my way to work. But after doing some research into abandoned buildings, I
-    grew more and more eager to explore these fascinating spaces myself.
-  - "My friends think I am an adrenaline junkie\u2013 there is no reason to be hopping
-    around what could be decaying government buildings when others have more \u201Cnormal\u201D
-    hobbies. ."
-  - "Well anyways, I\u2019ve been doing this for years now and I just got a tip from
-    someone else in the urbex community about this abandoned office building that
-    may or may not have what I want\u2026"
-  - "What I\u2019ve been looking for all this time\u2026"
+  - I can't believe it....
+  - That kid Jimmy stole all my Pokemon cards.
+  - I have to get them back!!

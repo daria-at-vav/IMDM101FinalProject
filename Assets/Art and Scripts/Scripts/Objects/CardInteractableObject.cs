@@ -9,7 +9,7 @@ public class CardInteractableObject : SimpleInteractableObject {
     private int count = 0;
 
     public override void Interact() {
-        if (count < max+1){
+        if (count < max + 1){
             count++;
             Talk(dialogueText);
             print("interacted");
@@ -21,6 +21,4 @@ public class CardInteractableObject : SimpleInteractableObject {
             print("added " + card.name + " to inventory");
         }
     }
-
-
 }
