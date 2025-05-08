@@ -803,6 +803,7 @@ MonoBehaviour:
   dialogueText: {fileID: 11400000, guid: 9ab29b4057baa4f4a8f8fe067abf21f7, type: 2}
   dialogueController: {fileID: 706119824}
   BattleName: BattleScene
+  maxInteractCount: 3
 --- !u!1 &922749204
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da6f3aebf62d5494f96549f7646661cc, type: 3}
+  m_Name: FireStarter
+  m_EditorClassIdentifier: 
+  cardName: Unnamed
+  baseHp: 60
+  type: 0
+  move1: {fileID: 11400000, guid: 3936c1a8e66f9474b939387a593d2f76, type: 2}
+  move2: {fileID: 11400000, guid: fbfcda437775beb4fb28d842b7934552, type: 2}
+  image: {fileID: 0}
