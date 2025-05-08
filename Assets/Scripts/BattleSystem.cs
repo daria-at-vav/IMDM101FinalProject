@@ -93,13 +93,15 @@ public class BattleSystem : MonoBehaviour
             //yield return new WaitForSeonds(2f);
             //check for dead, set to win
             // update stats
-            // end turn}
+            //state= BattleState.ENEMYGO;
+            // }
      
             // else if(Input button move 2)
             // {calc dmg
             //check for dead, set to win
             // update stats
-            // end turn}
+            // state= BattleState.ENEMYGO;
+            //}
       
     }
     
