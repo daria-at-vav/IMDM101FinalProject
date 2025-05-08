@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public enum BattleState { NULL, PLAYERGO, ENEMYGO, WIN, LOSE }
 public class BattleSystem : MonoBehaviour
 {
+    //ui button references?
     public GameObject playerPrefab;
     public GameObject enemyPrefab;
 
@@ -27,57 +28,81 @@ public class BattleSystem : MonoBehaviour
         StartCoroutine(SetupBattle());
     }
 
-    IEnumerator SetupBattle()
-    {
-       GameObject playerObj = Instantiate(playerPrefab, playerBench);
-       playerUnit = playerObj.GetComponent<Unit>();
+        IEnumerator SetupBattle() //inst the objects
+        {
+            GameObject playerObj = Instantiate(playerPrefab, playerBench);
+            playerUnit = playerObj.GetComponent<Unit>();
        
-       GameObject enemyObj = Instantiate(enemyPrefab, enemyBench);
-       enemyUnit = enemyObj.GetComponent<Unit>();
-
+            GameObject enemyObj = Instantiate(enemyPrefab, enemyBench);
+            enemyUnit = enemyObj.GetComponent<Unit>();
        
-       playerBenchDisplay.SetDisplay(playerUnit);
-       enemyBenchDisplay.SetDisplay(enemyUnit);
+            playerBenchDisplay.SetDisplay(playerUnit);
+            enemyBenchDisplay.SetDisplay(enemyUnit);
 
-       yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(2f);
 
-       state = BattleState.PLAYERGO;
-       PlayerGo();
+            state = BattleState.PLAYERGO;
+            PlayerGo();
+        }
+        
+        IEnumerator PlayerAttack()
+        {
+            bool isDead = enemyUnit.Damage(playerUnit.move);
+            
+            enemyBenchDisplay.SetHP(enemyUnit.currentHP);
+            dialogueText.text =  "Attacked.";
+   
+            yield return new WaitForSeconds(2f);
+    
+            if(isDead)
+            {
+                state = BattleState.WIN;
+                EndBattle();
+            } else
+                { state = BattleState.ENEMYGO;
+                EnemyGo();
+                }
+        } 
+            
+           
+    
+   
 
-    }
-
-    //IEnumerator Moveset()
-   // {
-       //move 1 or move 2
-      // calc dmg
-      //check for dead, set to win
-      // update stats
-      // end turn
-     
-     
-      
-    // bool isDead = enemyUnit.Damage(playerUnit.move);
-    // enemyBenchDisplay.SetHP(enemyUnit.currentHP);
-    //  dialogueText.text =  
-    // yield return new WaitForSeconds(2f);
-    //if(isDead)
-   // {
-   // state = BattleState.WIN;
-   // } else
-   //{ state = BattleState.ENEMYGO;
-   //  StartCoroutine(EnemyGo());
-   //}
 
     void PlayerGo()
     {
-       // dialogueText.text for instructions
+       dialogueText.text = "Draw or Play a Move!";
         // buttons active
         // inst cards to form deck?
          //from card array, bring in new card obj 
-       // yield return new WaitForSeconds(2f);
-        // card sprite to hand 
-        //StartCoroutine(Moveset());
+       
+        yield return new WaitForSeconds(2f);
+        // card image displayed
+        StartCoroutine(PlayerAttack());
     }
+
+    void OnButtons()
+    {
+         //if (OnCLick(deck button))
+            //{ add card from deck to hand
+            // disable deck button
+            //}
+
+            //else if (OnClick(move1 button))
+            // {calc dmg
+            //yield return new WaitForSeonds(2f);
+            //check for dead, set to win
+            // update stats
+            // end turn}
+     
+            // else if(Input button move 2)
+            // {calc dmg
+            //check for dead, set to win
+            // update stats
+            // end turn}
+      
+    }
+    
      void EnemyGo()
    {
    // inst. specific cards
@@ -85,17 +110,18 @@ public class BattleSystem : MonoBehaviour
    // deal damage, check for lose
    // end turn 
    //state = BattleState.PLAYERGO;
+   //PlayerGo();
    }
 
   void EndBattle()
    {
     if(state == BattleState.WIN)
     {
-        //text, transition to scene
+        //text, SceneManager.LoadScene();
     } 
     else if(state == BattleState.LOSE)
     {
-        //text, return to last point
+        //text, SceneManager.LoadScene();
     }
    }
 }
