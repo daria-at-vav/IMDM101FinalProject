@@ -797,11 +797,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 751507311}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d2ff9e0320f332448fbde2353a89cd3, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e5967abee51d584e9ba1f6009e1e4ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 11400000, guid: 9ab29b4057baa4f4a8f8fe067abf21f7, type: 2}
   dialogueController: {fileID: 706119824}
+  BattleName: BattleScene
 --- !u!1 &922749204
 GameObject:
   m_ObjectHideFlags: 0
@@ -11323,7 +11324,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
