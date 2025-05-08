@@ -31,5 +31,6 @@ public class ExitScript : NonPlayerObject {
         SceneManager.MoveGameObjectToScene(player, scene);
         Tilemap solid = GameObject.Find(nextSceneName + " Solid").GetComponent<Tilemap>();
         player.GetComponent<PlayerController>().solidTilemap = solid;
+        SceneManager.sceneLoaded -= moveHelper;
    }
 }
