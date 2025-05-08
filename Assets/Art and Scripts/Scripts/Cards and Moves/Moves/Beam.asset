@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e95c1feac9e25354ea6a51fa94474bda, type: 3}
+  m_Script: {fileID: 11500000, guid: 970b696cb492b134c8d553033d6c68d6, type: 3}
   m_Name: Beam
   m_EditorClassIdentifier: 
-  moveName: 
-  dmg: 0
-  recoil: 0
-  heal: 0
-  flavorText: 
+  cardName: 
+  baseHp: 0
+  type: 0
+  move1: {fileID: 0}
+  move2: {fileID: 0}
+  image: {fileID: 0}

@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 677483eafee7ecf4584127fdad8f474b, type: 3}
+  m_Script: {fileID: 11500000, guid: b1ba8d4c88fe5cd46884fe0f99fb5e2f, type: 3}
   m_Name: Hydro Pump
   m_EditorClassIdentifier: 
   moveName: 
@@ -17,6 +17,3 @@ MonoBehaviour:
   recoil: 0
   heal: 0
   flavorText: 
-  coins: 0
-  multiplier: 0
-  randomType: 0

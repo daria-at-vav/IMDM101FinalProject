@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da6f3aebf62d5494f96549f7646661cc, type: 3}
+  m_Script: {fileID: 11500000, guid: 970b696cb492b134c8d553033d6c68d6, type: 3}
   m_Name: WaterStarter
   m_EditorClassIdentifier: 
-  cardName: Magigar
+  cardName: 
   baseHp: 0
-  type: 1
-  move1: {fileID: 11400000, guid: a90d1e9ca06f08d43bfc71da6c53800e, type: 2}
-  move2: {fileID: 11400000, guid: b900d3abe3ce8b04f9505ecc7a7b671f, type: 2}
-  image: {fileID: 22810654189880763, guid: b99e16d0b67f541478802737749cb338, type: 3}
+  type: 0
+  move1: {fileID: 0}
+  move2: {fileID: 0}
+  image: {fileID: 0}

@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e95c1feac9e25354ea6a51fa94474bda, type: 3}
+  m_Script: {fileID: 11500000, guid: b1ba8d4c88fe5cd46884fe0f99fb5e2f, type: 3}
   m_Name: Overheat
   m_EditorClassIdentifier: 
-  moveName: Overheat
-  dmg: 90
-  recoil: 30
+  moveName: 
+  dmg: 0
+  recoil: 0
   heal: 0
-  flavorText: reduced to atoms
+  flavorText: 
