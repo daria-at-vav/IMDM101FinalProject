@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e95c1feac9e25354ea6a51fa94474bda, type: 3}
+  m_Name: Life Drain
+  m_EditorClassIdentifier: 
+  moveName: Life Drain
+  dmg: 20
+  recoil: 0
+  heal: 20
+  flavorText: "curse of ;leaf \U0001F33F\U0001F340\U0001F96C\U0001F343\U0001F342"
