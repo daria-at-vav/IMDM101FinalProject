@@ -9,14 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 677483eafee7ecf4584127fdad8f474b, type: 3}
+  m_Script: {fileID: 11500000, guid: 61a10106193bb904d9f4c7a1cce9bc22, type: 3}
   m_Name: Worse gambling
   m_EditorClassIdentifier: 
-  moveName: 
+  moveName: Worse gambling
   dmg: 0
   recoil: 0
   heal: 0
-  flavorText: 
+  flavorText: Let's go gambling!!!!
   coins: 0
-  multiplier: 0
-  randomType: 0
+  multiplier: 20
+  randomType: 1
