@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d87d450c5195874ea4145bd4e6fad16, type: 3}
+  m_Name: MilkshakeCard
+  m_EditorClassIdentifier: 
+  speakerName: 
+  paragraphs:
+  - Hi there neighbor! I just got locked out of my mechanical vehicle for efficient
+    transportation.
+  - "Oh! Where are my manners? I haven't even introduced myself. Folks call me \u201CMilkshake.\u201D "
+  - 'So, are you having trouble achieving all your dreams?
+
+'
+  - 'You say that the little brat across the street named Jimmy has breeched your
+    trust and stolen your Pokemon cards that you have spent so long collecting and
+    now you are on a quest for vengence to aquire them back-
+
+'
+  - Hey-? Are you trying to pickpocket me??
+  - '> You gained 1 card.'

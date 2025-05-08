@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d87d450c5195874ea4145bd4e6fad16, type: 3}
-  m_Name: NiceWaterCooler
+  m_Name: MouthCard
   m_EditorClassIdentifier: 
   speakerName: 
   paragraphs:
-  - "It\u2019s full of water!\r"
-  - ...
-  - "It\u2019s clean water. Better keep looking."
+  - '*The little girl has a card in her mouth*'
+  - '*You outreach your hand to ask for it back and she sheepishly hands it back
+    to you*'
+  - Ewww...
+  - '> You gained 1 card.'

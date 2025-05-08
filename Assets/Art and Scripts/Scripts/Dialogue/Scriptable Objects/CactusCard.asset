@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d87d450c5195874ea4145bd4e6fad16, type: 3}
-  m_Name: Rat
+  m_Name: CactusCard
   m_EditorClassIdentifier: 
   speakerName: 
   paragraphs:
-  - "Ahh!\r\r\n"
-  - "\u2026\r"
-  - "That didn\u2019t scare me."
+  - Ouch!
+  - W-what? A card? How did this get here??
+  - '> You gained 1 card.'

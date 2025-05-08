@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d87d450c5195874ea4145bd4e6fad16, type: 3}
-  m_Name: Map
+  m_Name: CarCard
   m_EditorClassIdentifier: 
   speakerName: 
   paragraphs:
-  - "Sick, a map! I can use this to find out where the basement is!\r"
-  - "If the basement is flooded, I might be able to find stagnant water: \u201Cstillwater.\u201D\r"
-  - "It\u2019ll be dangerous to find\u2026 the water might have harmful bacteria
-    or brain-eating amoeba in it but I am determined to find it! \r"
+  - 'Car jacking is bad... '
+  - But dire times require dire solutions.
+  - '> You gained 1 card.'

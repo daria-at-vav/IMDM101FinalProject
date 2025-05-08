@@ -12,9 +12,15 @@ public class SimpleInteractableObject : NonPlayerObject {
     // void Start() {
     //     this.AddComponent<DialogueControllerScript>();
     //     dialogueController = this.GetComponent<DialogueControllerScript>();
-    // }
+    //}
     
     public override void Interact() {
+
+        if (dialogueController != null){
+            print("ieks");
+        }
+
+
         Talk(dialogueText);
         print("interacted");
     }

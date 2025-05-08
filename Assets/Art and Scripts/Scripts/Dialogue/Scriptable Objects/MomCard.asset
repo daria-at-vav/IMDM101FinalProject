@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d87d450c5195874ea4145bd4e6fad16, type: 3}
-  m_Name: CornerGirl
+  m_Name: MomCard
   m_EditorClassIdentifier: 
   speakerName: 
   paragraphs:
-  - "She looks deep in thought.\r"
-  - "It's best not to bother her.\r\n\r"
+  - Hi sweetheart! It's such a beautiful day outside!
+  - Why don't you play with that kid Jimmy from across the street?
+  - Oh? He stole your "pokey"-mon cards?
+  - You mean like one of these?
+  - '> You gained 1 card.'
