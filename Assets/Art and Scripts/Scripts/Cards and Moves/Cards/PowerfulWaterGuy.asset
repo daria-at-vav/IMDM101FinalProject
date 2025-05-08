@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 970b696cb492b134c8d553033d6c68d6, type: 3}
   m_Name: PowerfulWaterGuy
   m_EditorClassIdentifier: 
-  cardName: 
-  baseHp: 0
-  type: 0
-  move1: {fileID: 0}
-  move2: {fileID: 0}
-  image: {fileID: 0}
+  cardName: The thing
+  baseHp: 16
+  type: 1
+  move1: {fileID: 11400000, guid: 34989e378e4cee64cbf9bdffa597b584, type: 2}
+  move2: {fileID: 11400000, guid: 5a0f0ef83913b594b88c04ef840271a4, type: 2}
+  image: {fileID: 5452007344477123452, guid: faaafd86fa3c33b4cb53c80256d67020, type: 3}

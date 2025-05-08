@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 970b696cb492b134c8d553033d6c68d6, type: 3}
   m_Name: PowerfulFireGuy
   m_EditorClassIdentifier: 
-  cardName: 
-  baseHp: 0
+  cardName: RAHHHHH
+  baseHp: 16
   type: 0
-  move1: {fileID: 0}
-  move2: {fileID: 0}
-  image: {fileID: 0}
+  move1: {fileID: 11400000, guid: 17ae6f3341382b540a4e6f16ebf3d53b, type: 2}
+  move2: {fileID: 11400000, guid: fbfcda437775beb4fb28d842b7934552, type: 2}
+  image: {fileID: -2239720113227787355, guid: 6796177adccefbd44a7acc6068d1da43, type: 3}

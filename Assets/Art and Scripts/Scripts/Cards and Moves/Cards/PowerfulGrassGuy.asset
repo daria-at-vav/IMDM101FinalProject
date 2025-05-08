@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 970b696cb492b134c8d553033d6c68d6, type: 3}
   m_Name: PowerfulGrassGuy
   m_EditorClassIdentifier: 
-  cardName: 
-  baseHp: 0
-  type: 0
-  move1: {fileID: 0}
-  move2: {fileID: 0}
-  image: {fileID: 0}
+  cardName: Largest goo er
+  baseHp: 16
+  type: 2
+  move1: {fileID: 11400000, guid: 08dd6915edba5ef4a8ecafddcc278cb4, type: 2}
+  move2: {fileID: 11400000, guid: f2d9ed2eb0a5b9245868cd27dab86f7d, type: 2}
+  image: {fileID: -1491568870157989599, guid: 3b11c6bbbf4e7d94fa757a537a58a81c, type: 3}

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ba8d4c88fe5cd46884fe0f99fb5e2f, type: 3}
   m_Name: Leaf Blade
   m_EditorClassIdentifier: 
-  moveName: 
-  dmg: 0
+  moveName: Leaf Blade
+  dmg: 30
   recoil: 0
   heal: 0
-  flavorText: 
+  flavorText: Swiiioooshhh

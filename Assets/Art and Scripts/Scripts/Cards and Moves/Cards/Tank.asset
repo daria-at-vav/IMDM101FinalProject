@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 970b696cb492b134c8d553033d6c68d6, type: 3}
   m_Name: Tank
   m_EditorClassIdentifier: 
-  cardName: 
-  baseHp: 0
-  type: 0
-  move1: {fileID: 0}
-  move2: {fileID: 0}
-  image: {fileID: 0}
+  cardName: Brick Wall Jonathan
+  baseHp: 8
+  type: 3
+  move1: {fileID: 11400000, guid: 050ba4ce17429e54290eee906137f140, type: 2}
+  move2: {fileID: 11400000, guid: 050ba4ce17429e54290eee906137f140, type: 2}
+  image: {fileID: -7175873731188745668, guid: 1af0c288eb430394ab05d89286bed95b, type: 3}

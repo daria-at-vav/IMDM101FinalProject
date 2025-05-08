@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 970b696cb492b134c8d553033d6c68d6, type: 3}
+  m_Script: {fileID: 11500000, guid: b1ba8d4c88fe5cd46884fe0f99fb5e2f, type: 3}
   m_Name: Beam
   m_EditorClassIdentifier: 
-  cardName: 
-  baseHp: 0
-  type: 0
-  move1: {fileID: 0}
-  move2: {fileID: 0}
-  image: {fileID: 0}
+  moveName: Beam
+  dmg: 50
+  recoil: 0
+  heal: 0
+  flavorText: Miku Miku BEAMMMMMM

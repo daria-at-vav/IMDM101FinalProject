@@ -9,11 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1ba8d4c88fe5cd46884fe0f99fb5e2f, type: 3}
+  m_Script: {fileID: 11500000, guid: 61a10106193bb904d9f4c7a1cce9bc22, type: 3}
   m_Name: Water Pulse
   m_EditorClassIdentifier: 
-  moveName: 
-  dmg: 0
+  moveName: Water Pulse
+  dmg: 20
   recoil: 0
   heal: 0
-  flavorText: 
+  flavorText: 'water '
+  coins: 1
+  multiplier: 40
+  randomType: 0

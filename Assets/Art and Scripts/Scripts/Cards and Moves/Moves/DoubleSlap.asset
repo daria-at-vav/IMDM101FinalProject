@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ba8d4c88fe5cd46884fe0f99fb5e2f, type: 3}
   m_Name: DoubleSlap
   m_EditorClassIdentifier: 
-  moveName: 
-  dmg: 0
+  moveName: Double Slap
+  dmg: 20
   recoil: 0
   heal: 0
-  flavorText: 
+  flavorText: Twice the damage of a regular slap.
