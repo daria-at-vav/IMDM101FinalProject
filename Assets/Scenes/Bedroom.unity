@@ -189,7 +189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 226881923051391003, guid: c7aca84d741b11244a89987b581b1a13, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -417.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 226881923051391003, guid: c7aca84d741b11244a89987b581b1a13, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -211,8 +211,28 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 716353846666277624, guid: c7aca84d741b11244a89987b581b1a13, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 716353846666277624, guid: c7aca84d741b11244a89987b581b1a13, type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 716353846666277624, guid: c7aca84d741b11244a89987b581b1a13, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 716353846666277624, guid: c7aca84d741b11244a89987b581b1a13, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 972634523103237520, guid: c7aca84d741b11244a89987b581b1a13, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5494800814282646934, guid: c7aca84d741b11244a89987b581b1a13, type: 3}
+      propertyPath: m_CullTransparentMesh
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8161126416749972862, guid: c7aca84d741b11244a89987b581b1a13, type: 3}
@@ -388,6 +408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 262352979}
   - component: {fileID: 262352978}
+  - component: {fileID: 262352980}
   m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
@@ -465,6 +486,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &262352980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262352977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5624ed76e1fef6347ae93f1f8aa6e621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 11400000, guid: ff64fa66235d3054db7c6d4ca04e7a22, type: 2}
+  dialogueController: {fileID: 1230473491}
+  card: {fileID: 0}
+  max: 3
 --- !u!1 &282461624
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,6 +512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 282461626}
   - component: {fileID: 282461625}
+  - component: {fileID: 282461627}
   m_Layer: 0
   m_Name: Desk
   m_TagString: Untagged
@@ -552,6 +590,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &282461627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282461624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5624ed76e1fef6347ae93f1f8aa6e621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 11400000, guid: 0269496fc32612d408639eb0eb02ff39, type: 2}
+  dialogueController: {fileID: 1230473491}
+  card: {fileID: 0}
+  max: 2
 --- !u!1 &421817364
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,17 +743,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &706119824 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5536866491489673867, guid: c7aca84d741b11244a89987b581b1a13, type: 3}
-  m_PrefabInstance: {fileID: 170587163}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9724b1d4cb180cd46a3e604fe09519ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &751507311
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,13 +840,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 751507311}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e5967abee51d584e9ba1f6009e1e4ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d2ff9e0320f332448fbde2353a89cd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 11400000, guid: 9ab29b4057baa4f4a8f8fe067abf21f7, type: 2}
-  dialogueController: {fileID: 706119824}
-  BattleName: BattleScene
-  maxInteractCount: 3
+  dialogueController: {fileID: 1230473491}
 --- !u!1 &922749204
 GameObject:
   m_ObjectHideFlags: 0
@@ -5438,6 +5479,26 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -5, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 19
+      m_TileSpriteIndex: 19
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -4, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 19
+      m_TileSpriteIndex: 19
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 2, y: -2, z: 0}
     second:
       serializedVersion: 2
@@ -5763,26 +5824,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 12
       m_TileSpriteIndex: 12
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -5, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 19
-      m_TileSpriteIndex: 19
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -4, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 19
-      m_TileSpriteIndex: 19
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10251,6 +10292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 927400781}
   - component: {fileID: 927400780}
+  - component: {fileID: 927400782}
   m_Layer: 0
   m_Name: Laundry_0
   m_TagString: Untagged
@@ -10322,12 +10364,26 @@ Transform:
   m_GameObject: {fileID: 927400779}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 0, z: 0}
+  m_LocalPosition: {x: -4, y: -1.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &927400782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927400779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d2ff9e0320f332448fbde2353a89cd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 11400000, guid: 022fd979791313543bdce876eb38ca02, type: 2}
+  dialogueController: {fileID: 1230473491}
 --- !u!1 &1186850055
 GameObject:
   m_ObjectHideFlags: 0
@@ -11248,6 +11304,17 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1230473491 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5536866491489673867, guid: c7aca84d741b11244a89987b581b1a13, type: 3}
+  m_PrefabInstance: {fileID: 170587163}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9724b1d4cb180cd46a3e604fe09519ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1533473006
 GameObject:
   m_ObjectHideFlags: 0
@@ -11325,7 +11392,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0

@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d87d450c5195874ea4145bd4e6fad16, type: 3}
-  m_Name: StartText
+  m_Name: Bullies
   m_EditorClassIdentifier: 
   speakerName: 
   paragraphs:
-  - I can't believe it....
-  - That kid Jimmy stole all my Pokemon cards.
-  - I have to get them back!!
+  - 'Emo guy: If ya'' wanna get ta'' Jimmy, ya gotta get through us first!'
+  - 'Pink-haired girl: Yeah kid- square up or square down!'
+  - 'Tank-top guy: You know, I''m not really into fighting little kids... you can
+    go.'
+  - 'Emo guy: Bruh, I had a whole speech prepared.'
+  - 'Pink-haired girl: Whatever, you''re no fun.'

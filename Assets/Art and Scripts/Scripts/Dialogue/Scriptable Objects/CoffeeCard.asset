@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d87d450c5195874ea4145bd4e6fad16, type: 3}
-  m_Name: StartText
+  m_Name: CoffeeCard
   m_EditorClassIdentifier: 
   speakerName: 
   paragraphs:
-  - I can't believe it....
-  - That kid Jimmy stole all my Pokemon cards.
-  - I have to get them back!!
+  - '*Sigh*'
+  - Kids these days...
+  - I saw these three brats laughing and running away from that side of the street.
+  - They dropped this on the way. It doesn't happen to be yours right?
+  - '> You gained 1 card.'

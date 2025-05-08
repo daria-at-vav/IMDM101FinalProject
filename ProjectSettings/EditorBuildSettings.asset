@@ -15,8 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Neighborhood.unity
     guid: c39980e4800023f4c9be3a4cc62f38ce
   - enabled: 1
+    path: Assets/Scenes/Jimmy's House.unity
+    guid: e0c58884d517c474d937fbe026ae8b97
+  - enabled: 1
     path: Assets/Scenes/BattleScene.unity
     guid: 15a7b51752edfd144beaf3cb49a34230
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 17eba3ba1da4021438f6cf030baa6df1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

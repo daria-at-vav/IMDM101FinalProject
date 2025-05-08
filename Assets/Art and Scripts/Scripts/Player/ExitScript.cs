@@ -21,6 +21,8 @@ public class ExitScript : NonPlayerObject {
             base.player.transform.position = new Vector3(-6.5f, 2.0f, 0.0f);
         } else if (nextSceneName == "Neighborhood") {
             base.player.transform.position = new Vector3(-21.5f, 3.0f, 0.0f);
+        } else {
+            base.player.transform.position = new Vector3(-0.5f, -3.0f, 0.0f);
         }
 
         print("set SceneChanged");
@@ -29,6 +31,9 @@ public class ExitScript : NonPlayerObject {
     // Auxiliary for moveToScene that contains methods that need to wait for load
     private void moveHelper(UnityEngine.SceneManagement.Scene scene, LoadSceneMode mode) {
         SceneManager.MoveGameObjectToScene(player, scene);
+
+        print(nextSceneName);
+
         Tilemap solid = GameObject.Find(nextSceneName + " Solid").GetComponent<Tilemap>();
         player.GetComponent<PlayerController>().solidTilemap = solid;
         SceneManager.sceneLoaded -= moveHelper;

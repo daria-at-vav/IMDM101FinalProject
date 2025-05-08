@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d87d450c5195874ea4145bd4e6fad16, type: 3}
-  m_Name: StartText
+  m_Name: BedCard
   m_EditorClassIdentifier: 
   speakerName: 
   paragraphs:
-  - I can't believe it....
-  - That kid Jimmy stole all my Pokemon cards.
-  - I have to get them back!!
+  - One of my cards!
+  - It seems like Jimmy hasn't stolen all of them...
+  - '> You gained 1 card.'
