@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    private ArrayList inventory;
+    public ArrayList inventory;
     private ArrayList deck;
     int deckSizeLimit = 10;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
