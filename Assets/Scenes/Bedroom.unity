@@ -481,6 +481,7 @@ MonoBehaviour:
   dialogueText: {fileID: 11400000, guid: ff64fa66235d3054db7c6d4ca04e7a22, type: 2}
   dialogueController: {fileID: 1230473491}
   card: {fileID: 0}
+  max: 3
 --- !u!1 &282461624
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +585,7 @@ MonoBehaviour:
   dialogueText: {fileID: 11400000, guid: 0269496fc32612d408639eb0eb02ff39, type: 2}
   dialogueController: {fileID: 1230473491}
   card: {fileID: 0}
+  max: 2
 --- !u!1 &421817364
 GameObject:
   m_ObjectHideFlags: 0

@@ -888,7 +888,7 @@ GameObject:
   - component: {fileID: 1098640116}
   - component: {fileID: 1098640115}
   m_Layer: 0
-  m_Name: Jimmy Solid
+  m_Name: Jimmy's House Solid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5760,6 +5760,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -1, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 25
+      m_TileSpriteIndex: 25
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 1, y: -1, z: 0}
     second:
       serializedVersion: 2
@@ -10092,6 +10102,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 1798d42d6f4353a4f8218d37bc44bfde, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: fd2305f8e973abd4db05c8726819107a, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: c182864d5a776524b98bf19d7abeb8ec, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 4
     m_Data: {fileID: -1958629552, guid: 9d3188cb12d21c34da871f132411fb83, type: 3}
@@ -10143,8 +10155,10 @@ Tilemap:
     m_Data: {fileID: 41547312, guid: 304134088112c0c4f8e18d76991e9819, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -204072921, guid: 9d3188cb12d21c34da871f132411fb83, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -1418167937, guid: 9d3188cb12d21c34da871f132411fb83, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 907
+  - m_RefCount: 908
     m_Data:
       e00: 1
       e01: 0
@@ -10163,7 +10177,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 907
+  - m_RefCount: 908
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1

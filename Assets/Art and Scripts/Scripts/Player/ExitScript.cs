@@ -22,7 +22,7 @@ public class ExitScript : NonPlayerObject {
         } else if (nextSceneName == "Neighborhood") {
             base.player.transform.position = new Vector3(-21.5f, 3.0f, 0.0f);
         } else {
-            base.player.transform.position = new Vector3(-0.5f, -4.0f, 0.0f);
+            base.player.transform.position = new Vector3(-0.5f, -3.0f, 0.0f);
         }
 
         print("set SceneChanged");

@@ -955,6 +955,7 @@ MonoBehaviour:
   dialogueText: {fileID: 11400000, guid: e966745cb1cc50c4c8d9657e3087c9cc, type: 2}
   dialogueController: {fileID: 1939543552}
   card: {fileID: 0}
+  max: 0
 --- !u!1 &334390186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,6 +1752,7 @@ MonoBehaviour:
   dialogueText: {fileID: 11400000, guid: 7a45478b8d71db442b69cd2c3332f445, type: 2}
   dialogueController: {fileID: 1939543552}
   card: {fileID: 0}
+  max: 3
 --- !u!1 &524972208
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,6 +3718,7 @@ MonoBehaviour:
   dialogueText: {fileID: 11400000, guid: da52f145098880448bc5ced4c4e58dad, type: 2}
   dialogueController: {fileID: 1939543552}
   card: {fileID: 0}
+  max: 5
 --- !u!1 &1022722690
 GameObject:
   m_ObjectHideFlags: 0
@@ -3819,6 +3822,7 @@ MonoBehaviour:
   dialogueText: {fileID: 11400000, guid: 4a3440a93478e8a4fad9627e697d4233, type: 2}
   dialogueController: {fileID: 1939543552}
   card: {fileID: 0}
+  max: 7
 --- !u!1 &1029505635
 GameObject:
   m_ObjectHideFlags: 0
@@ -6993,7 +6997,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8161126416749972862, guid: c7aca84d741b11244a89987b581b1a13, type: 3}
       propertyPath: m_Name
-      value: DialogueTextImage (1)
+      value: DialogueTextImage
       objectReference: {fileID: 0}
     - target: {fileID: 8161126416749972862, guid: c7aca84d741b11244a89987b581b1a13, type: 3}
       propertyPath: m_IsActive
@@ -7200,6 +7204,7 @@ MonoBehaviour:
   dialogueText: {fileID: 11400000, guid: 11b13ce8ee2ab584daac4b2c2ffd358c, type: 2}
   dialogueController: {fileID: 1939543552}
   card: {fileID: 0}
+  max: 3
 --- !u!1 &1992720674
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class DialogueControllerScript : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI messageText;
     [SerializeField] private float typeSpeed = 10;
     [SerializeField] private PlayerController playerController;
-    private Image background;
+    [SerializeField] private Image background;
     private float MAX_TYPE_TIME = 0.1f;
 
     private Queue<string> paragraphs = new Queue<string>();
@@ -18,7 +18,7 @@ public class DialogueControllerScript : MonoBehaviour {
 
     private bool conversationEnded = true;
     private bool isTyping;
-
+    
     private string para;
 
     // Serializing is my #1 opp i just dislike it. reworked so we dont have to click and drag 1 billion times
@@ -27,9 +27,11 @@ public class DialogueControllerScript : MonoBehaviour {
         messageText = GameObject.Find("Message").GetComponent<TextMeshProUGUI>();
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         background = GameObject.Find("DialogueTextImage").GetComponent<Image>();
+
     }
 
     public void DisplayNextParagraph(DialogueText dialogueText) { 
+
         // if theres nothing in the queue
         if (paragraphs.Count == 0) {
 
@@ -54,6 +56,11 @@ public class DialogueControllerScript : MonoBehaviour {
     }
 
     private void StartConvo(DialogueText dialogueText) {
+
+        if (background == null) {
+            print("RAAAAHHHHHHHH");
+        }
+
         if (playerController != null) {
             playerController.Freeze();
         }
@@ -85,11 +92,9 @@ public class DialogueControllerScript : MonoBehaviour {
         background.enabled = false;
         
         conversationEnded = true;
-
     }
 
-    private IEnumerator TypeDialogueText(string p)
-    {
+    private IEnumerator TypeDialogueText(string p) {
         isTyping = true;
 
         int maxVisibleChars = 0;

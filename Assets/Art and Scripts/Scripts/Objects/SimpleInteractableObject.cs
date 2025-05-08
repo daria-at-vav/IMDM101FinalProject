@@ -16,11 +16,6 @@ public class SimpleInteractableObject : NonPlayerObject {
     
     public override void Interact() {
 
-        if (dialogueController != null){
-            print("ieks");
-        }
-
-
         Talk(dialogueText);
         print("interacted");
     }
