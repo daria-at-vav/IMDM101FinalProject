@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9eb180a47f4c3f740bc8a7f035e0d0de
+guid: c81e797cd5a7b3d43b045e617d6a5fd0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 754176978631482883
-    second: card-artcairn_0
+      213: 2988436276736614802
+    second: Asset 5-8_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: card-artcairn_0
+      name: Asset 5-8_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 500
-        height: 337
+        width: 600
+        height: 605
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30e5b1d57ff577a00800000000000000
-      internalID: 754176978631482883
+      spriteID: 291e6c4d5fe097920800000000000000
+      internalID: 2988436276736614802
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      card-artcairn_0: 754176978631482883
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

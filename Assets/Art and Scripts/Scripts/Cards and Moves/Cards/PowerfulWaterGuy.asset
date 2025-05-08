@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6f3aebf62d5494f96549f7646661cc, type: 3}
   m_Name: PowerfulWaterGuy
   m_EditorClassIdentifier: 
-  cardName: 
+  cardName: Epaullion
   baseHp: 0
-  type: 0
+  type: 1
   move1: {fileID: 0}
   move2: {fileID: 0}
-  image: {fileID: 0}
+  image: {fileID: 5452007344477123452, guid: faaafd86fa3c33b4cb53c80256d67020, type: 3}

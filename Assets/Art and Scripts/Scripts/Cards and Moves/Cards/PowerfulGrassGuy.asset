@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6f3aebf62d5494f96549f7646661cc, type: 3}
   m_Name: PowerfulGrassGuy
   m_EditorClassIdentifier: 
-  cardName: 
+  cardName: Trunkquill
   baseHp: 0
-  type: 0
+  type: 2
   move1: {fileID: 0}
   move2: {fileID: 0}
-  image: {fileID: 0}
+  image: {fileID: -7175873731188745668, guid: 1af0c288eb430394ab05d89286bed95b, type: 3}

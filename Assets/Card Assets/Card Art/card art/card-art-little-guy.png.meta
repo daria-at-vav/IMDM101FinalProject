@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      card-art-little-guy_0: -4825695017674329113
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

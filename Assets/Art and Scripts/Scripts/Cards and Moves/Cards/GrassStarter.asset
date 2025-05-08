@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6f3aebf62d5494f96549f7646661cc, type: 3}
   m_Name: GrassStarter
   m_EditorClassIdentifier: 
-  cardName: 
+  cardName: Treveil
   baseHp: 60
   type: 2
   move1: {fileID: 11400000, guid: ad50a16bfea033b46813015b333153fc, type: 2}
   move2: {fileID: 11400000, guid: f3547fd2f3f3b97458283c09b16b36e3, type: 2}
-  image: {fileID: 0}
+  image: {fileID: 2102198797885704404, guid: 3f8a4f3a597c01b4099174e7d33bede6, type: 3}

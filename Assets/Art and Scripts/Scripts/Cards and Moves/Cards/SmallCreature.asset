@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6f3aebf62d5494f96549f7646661cc, type: 3}
   m_Name: SmallCreature
   m_EditorClassIdentifier: 
-  cardName: 
+  cardName: Neoscoot
   baseHp: 70
   type: 5
   move1: {fileID: 0}
   move2: {fileID: 0}
-  image: {fileID: 0}
+  image: {fileID: -2239720113227787355, guid: 6796177adccefbd44a7acc6068d1da43, type: 3}

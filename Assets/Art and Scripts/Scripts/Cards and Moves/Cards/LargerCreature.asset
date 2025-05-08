@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6f3aebf62d5494f96549f7646661cc, type: 3}
   m_Name: LargerCreature
   m_EditorClassIdentifier: 
-  cardName: 
+  cardName: Goosal
   baseHp: 0
-  type: 0
+  type: 5
   move1: {fileID: 0}
   move2: {fileID: 0}
-  image: {fileID: 0}
+  image: {fileID: -1491568870157989599, guid: 3b11c6bbbf4e7d94fa757a537a58a81c, type: 3}

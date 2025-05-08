@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6f3aebf62d5494f96549f7646661cc, type: 3}
   m_Name: Tank
   m_EditorClassIdentifier: 
-  cardName: 
+  cardName: Cararrian
   baseHp: 0
-  type: 0
+  type: 3
   move1: {fileID: 0}
   move2: {fileID: 0}
-  image: {fileID: 0}
+  image: {fileID: 754176978631482883, guid: 9eb180a47f4c3f740bc8a7f035e0d0de, type: 3}

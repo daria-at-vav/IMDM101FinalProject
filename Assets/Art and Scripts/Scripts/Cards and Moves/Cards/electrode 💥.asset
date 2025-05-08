@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6f3aebf62d5494f96549f7646661cc, type: 3}
   m_Name: "electrode \U0001F4A5"
   m_EditorClassIdentifier: 
-  cardName: 
+  cardName: Exitate
   baseHp: 80
   type: 4
   move1: {fileID: 11400000, guid: b45d48d684e940048a0a9544545ff382, type: 2}
   move2: {fileID: 11400000, guid: 713a6810a8582b1448f59d6b1a8420cc, type: 2}
-  image: {fileID: 0}
+  image: {fileID: -4825695017674329113, guid: 3a3773769fafa6d4b9287c76e9dc4cd6, type: 3}

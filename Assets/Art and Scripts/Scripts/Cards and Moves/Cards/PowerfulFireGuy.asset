@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6f3aebf62d5494f96549f7646661cc, type: 3}
   m_Name: PowerfulFireGuy
   m_EditorClassIdentifier: 
-  cardName: 
+  cardName: Anvillain
   baseHp: 120
   type: 0
   move1: {fileID: 0}
   move2: {fileID: 11400000, guid: 17ae6f3341382b540a4e6f16ebf3d53b, type: 2}
-  image: {fileID: 0}
+  image: {fileID: -3982302330733530495, guid: 80347aa3abd9dc642972472c64aa3594, type: 3}

@@ -1837,7 +1837,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8334291110345846127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fb01eb18caa78e40adf4ad5b35c2056, type: 3}
+  m_Script: {fileID: 11500000, guid: 384af40ea5442ed46af7b1e0e4367e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: {fileID: 2324022602678741775}
@@ -1880,10 +1880,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8334291110345846127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 795222043753e1f4087360d05aa4e1ad, type: 3}
+  m_Script: {fileID: 11500000, guid: 05bce5139a758a545b288ba47400d482, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardData: {fileID: 11400000, guid: b2603bfbbcd2ef04da569be46dfed8c9, type: 2}
+  cardData: {fileID: 0}
   currHp: 0
 --- !u!1 &8835177386503845150
 GameObject:
