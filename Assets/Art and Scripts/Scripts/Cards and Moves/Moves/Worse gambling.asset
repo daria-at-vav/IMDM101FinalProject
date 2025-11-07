@@ -16,7 +16,7 @@ MonoBehaviour:
   dmg: 0
   recoil: 0
   heal: 0
-  flavorText: Let's go gambling!!!!
+  flavorText: 
   coins: 0
   multiplier: 20
   randomType: 1

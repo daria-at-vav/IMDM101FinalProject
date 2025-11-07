@@ -16,7 +16,7 @@ MonoBehaviour:
   dmg: 20
   recoil: 0
   heal: 0
-  flavorText: 'water '
+  flavorText: 
   coins: 1
   multiplier: 40
   randomType: 0

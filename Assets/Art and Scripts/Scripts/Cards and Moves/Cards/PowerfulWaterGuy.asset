@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 970b696cb492b134c8d553033d6c68d6, type: 3}
   m_Name: PowerfulWaterGuy
   m_EditorClassIdentifier: 
-  cardName: The thing
-  baseHp: 16
+  cardName: Whalug
+  baseHp: 60
   type: 1
   move1: {fileID: 11400000, guid: 34989e378e4cee64cbf9bdffa597b584, type: 2}
   move2: {fileID: 11400000, guid: 5a0f0ef83913b594b88c04ef840271a4, type: 2}

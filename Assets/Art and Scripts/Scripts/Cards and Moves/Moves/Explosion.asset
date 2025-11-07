@@ -16,4 +16,4 @@ MonoBehaviour:
   dmg: 80
   recoil: 80
   heal: 0
-  flavorText: Boom
+  flavorText: 

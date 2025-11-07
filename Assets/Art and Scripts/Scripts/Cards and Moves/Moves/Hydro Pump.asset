@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Hydro Pump
   m_EditorClassIdentifier: 
   moveName: Hydro Pump
-  dmg: 0
+  dmg: 60
   recoil: 0
   heal: 0
-  flavorText: wuwuwuwwuwuwuwu
+  flavorText: 
   coins: 2
   multiplier: 60
   randomType: 0

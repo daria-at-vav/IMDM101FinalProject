@@ -16,4 +16,4 @@ MonoBehaviour:
   dmg: 0
   recoil: 0
   heal: 50
-  flavorText: Healing!!
+  flavorText: 

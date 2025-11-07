@@ -16,6 +16,4 @@ MonoBehaviour:
   dmg: 40
   recoil: 10
   heal: 0
-  flavorText: 'Fire
-
-'
+  flavorText: 

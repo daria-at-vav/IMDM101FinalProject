@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Reckless Charge
   m_EditorClassIdentifier: 
   moveName: Reckless Charge
-  dmg: 60
+  dmg: 90
   recoil: 20
   heal: 0
-  flavorText: Me towrads the kirby plushie section
+  flavorText: 

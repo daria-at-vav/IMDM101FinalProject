@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 970b696cb492b134c8d553033d6c68d6, type: 3}
   m_Name: GrassStarter
   m_EditorClassIdentifier: 
-  cardName: goober
-  baseHp: 8
+  cardName: Lichusnea
+  baseHp: 40
   type: 2
   move1: {fileID: 11400000, guid: 08dd6915edba5ef4a8ecafddcc278cb4, type: 2}
   move2: {fileID: 11400000, guid: f3547fd2f3f3b97458283c09b16b36e3, type: 2}

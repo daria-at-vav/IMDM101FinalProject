@@ -16,4 +16,4 @@ MonoBehaviour:
   dmg: 90
   recoil: 30
   heal: 0
-  flavorText: 'Overheating '
+  flavorText: 

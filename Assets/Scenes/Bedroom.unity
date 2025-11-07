@@ -11877,7 +11877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1120792938848332064, guid: ea51fcfea2c243d4bba68f9aabcfcc4f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 1120792938848332064, guid: ea51fcfea2c243d4bba68f9aabcfcc4f, type: 3}
       propertyPath: m_SizeDelta.y
@@ -11913,7 +11913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1120792938848332064, guid: ea51fcfea2c243d4bba68f9aabcfcc4f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 1120792938848332064, guid: ea51fcfea2c243d4bba68f9aabcfcc4f, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -11931,6 +11931,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1242824275431981648, guid: ea51fcfea2c243d4bba68f9aabcfcc4f, type: 3}
+      propertyPath: cardData
+      value: 
+      objectReference: {fileID: 11400000, guid: 2a88eb009b580f147ada47a0fac9f9d8, type: 2}
+    - target: {fileID: 3644827257048033382, guid: ea51fcfea2c243d4bba68f9aabcfcc4f, type: 3}
+      propertyPath: cardData
+      value: 
+      objectReference: {fileID: 11400000, guid: b3a5bf5fe21562d4490bc91c25871c4f, type: 2}
+    - target: {fileID: 5184045019543799012, guid: ea51fcfea2c243d4bba68f9aabcfcc4f, type: 3}
+      propertyPath: cardData
+      value: 
+      objectReference: {fileID: 11400000, guid: 80604195cdf1c0940b3f6ecbe4c94989, type: 2}
+    - target: {fileID: 5330351557161551444, guid: ea51fcfea2c243d4bba68f9aabcfcc4f, type: 3}
+      propertyPath: cardData
+      value: 
+      objectReference: {fileID: 11400000, guid: 9d88a356c84084e47b35f4bf7353f6d3, type: 2}
+    - target: {fileID: 5359334150107012021, guid: ea51fcfea2c243d4bba68f9aabcfcc4f, type: 3}
+      propertyPath: cardData
+      value: 
+      objectReference: {fileID: 11400000, guid: 867a3e7bef721304ab7dda7b3fe173dc, type: 2}
+    - target: {fileID: 6756504845618627184, guid: ea51fcfea2c243d4bba68f9aabcfcc4f, type: 3}
+      propertyPath: cardData
+      value: 
+      objectReference: {fileID: 11400000, guid: b715d8b7798bf8f46a2cd66360d21a89, type: 2}
+    - target: {fileID: 6914096689024571076, guid: ea51fcfea2c243d4bba68f9aabcfcc4f, type: 3}
+      propertyPath: cardData
+      value: 
+      objectReference: {fileID: 11400000, guid: 493ea4fb8cbe74d4abee9d57f68ddad0, type: 2}
+    - target: {fileID: 6995376942017278516, guid: ea51fcfea2c243d4bba68f9aabcfcc4f, type: 3}
+      propertyPath: cardData
+      value: 
+      objectReference: {fileID: 11400000, guid: 790c72763ab9b8b4f8a4df2637ed8af2, type: 2}
+    - target: {fileID: 8147343817896250375, guid: ea51fcfea2c243d4bba68f9aabcfcc4f, type: 3}
+      propertyPath: cardData
+      value: 
+      objectReference: {fileID: 11400000, guid: 5d88b6cf0dba5a0409e1622066314715, type: 2}
+    - target: {fileID: 8507633092197272242, guid: ea51fcfea2c243d4bba68f9aabcfcc4f, type: 3}
+      propertyPath: cardData
+      value: 
+      objectReference: {fileID: 11400000, guid: afaf575786c05544995c76ca895dac7d, type: 2}
     m_RemovedComponents:
     - {fileID: 3649426331898206180, guid: ea51fcfea2c243d4bba68f9aabcfcc4f, type: 3}
     m_RemovedGameObjects: []
@@ -11948,6 +11988,10 @@ PrefabInstance:
     - target: {fileID: 963980934701511903, guid: f7b0e3573228cca4eb741fae050ccc77, type: 3}
       propertyPath: m_Name
       value: hud
+      objectReference: {fileID: 0}
+    - target: {fileID: 963980934701511903, guid: f7b0e3573228cca4eb741fae050ccc77, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3919136360761843001, guid: f7b0e3573228cca4eb741fae050ccc77, type: 3}
       propertyPath: m_Pivot.x

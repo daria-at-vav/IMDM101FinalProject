@@ -16,4 +16,4 @@ MonoBehaviour:
   dmg: 20
   recoil: 20
   heal: 0
-  flavorText: Dies....
+  flavorText: 
